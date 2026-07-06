@@ -2,26 +2,15 @@
 <html>
 <head>
     <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            color: #333;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    </style>
+    <!-- Laravel 12 me Tailwind ko link karne ke liye ye line add karein -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
-    <h1>Welcome to the home Page!</h1>
+<body class="bg-slate-100 flex items-center justify-center h-screen m-0">
+
+    <!-- Tailwind classes ka use karein -->
+    <h1 class="text-2xl font-bold text-slate-800 bg-white p-6 rounded-lg shadow-md">
+        Welcome to the home Page!
+    </h1>
+
 </body>
 </html>

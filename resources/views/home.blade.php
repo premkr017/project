@@ -14,7 +14,7 @@
         <h1 class="text-teal-700 font-bold text-4xl">Laravel URL Shortner</h1>
 
         <form class="flex items-center justify-center space-x-2">
-            <input type="text" name="org_url" class="w-full border px-4 py-2 rounded-2xl">
+            <input type="text" name="org_url" class="w-full border border-blur-400 px-4 py-2 rounded-2xl focus:ring-2">
         </form>
     </div>
 </body>

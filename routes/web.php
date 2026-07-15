@@ -3,12 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testController;
 
+require __DIR__ . '/qr.php';
+
+Route::get('/test', [testController::class, 'welcome']);
+
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
-// Route::get('/home', function () {
-//     return view('home');
-// });
-
-Route::get('/test',[testController::class,'welcome']);
